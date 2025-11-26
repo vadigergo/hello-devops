@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello DevOps világ! 👋</h1>
-        <p>Ez az első saját React alapú DevOps alkalmazásom.</p>
+        <h1>Hello World!</h1>
+        <p>Vadi Gergő Tibor - WB4MBW</p>
       </header>
     </div>
   );
