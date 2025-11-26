@@ -95,4 +95,4 @@ http://localhost:8080
 
 ## 4. Docker Hub
 A buildelt image elérhető Docker Hub-on:
-https://hub.docker.com/r/vgerg7/hello-devops
+https://hub.docker.com/repository/docker/vgerg7/hello-devops/general
