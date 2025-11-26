@@ -70,9 +70,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## Build (DevOps beadandóhoz - wb4mbw)
+Ez a projekt a Gábor Dénes Egyetem DevOps tantárgyának beadandó feladata.
+Egy egyszerű „Hello World” típusú React webalkalmazást készítettem, amit Docker konténerbe csomagoltam, majd GitHub Actions segítségével automatizáltan buildeltem és feltöltöttem a Docker Hub-ra.
 
-A projekt buildeléséhez használandó parancsok:
+## 1. A projekt célja
+A cél az volt, hogy megtanuljam:
 
-```bash
+-hogyan lehet React alkalmazást Docker konténerbe tenni,
+-hogyan működik a GitHub Actions CI pipeline,
+-hogyan tudom automatizáltan feltölteni az image-et a Docker Hub-ra.
+
+## 2. Buildelés helyben
+Ha helyben szeretnéd futtatni:
 npm install
 npm run build
+
+Ez legenerálja a build/ mappát, amit a Dockerfile használ a konténerhez.
+
+## 3. Docker build és futtatás
+docker build -t hello-devops .
+docker run -p 8080:80 hello-devops
+Ezután a böngészőben megnyitva megjelenik az oldal:
+http://localhost:8080
+
+## 4. Docker Hub
+A buildelt image elérhető Docker Hub-on:
+https://hub.docker.com/r/vgerg7/hello-devops
